@@ -1,13 +1,12 @@
 {
-  "name" : "BroadSoft Xtended Dialer for Google Chrome™",
-  "short_name": "Xtended Dialer",
+  "name" : "InTechnology branded Xtended Dialer for Google Chrome™",
   "version" : "1.0",
   "description" : "A Google Chrome™ extension that provides BroadWorks telephony integration.",
   "manifest_version": 2,
   "omnibox": { "keyword" : "-call" },
   "options_page": "options.html",
   "browser_action": {
-    "default_icon": "images/bsft_logo_16x16.png",
+    "default_icon": "images/icon.png",
     "default_popup": "options.html"
   },
   "web_accessible_resources": [ "images/click2dial.png", "injected.js" ],
@@ -33,8 +32,8 @@
   ],
   "permissions": [ "notifications", "tabs", "http://*/*", "https://*/*", "tts" ],
   "icons": {
-    "16": "images/bsft_logo_16x16.png",
-    "48": "images/bsft_logo_48x48.png",
-    "128": "images/bsft_logo_128x128.png"
+    "16": "images/icon.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
    }
 }

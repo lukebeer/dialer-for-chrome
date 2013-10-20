@@ -25,7 +25,7 @@ function showMessage(message, fadeOut) {
 }
 
 function signin() {
-	localStorage["url"] = $("#url").val();
+	localStorage["url"] = 'http://xsi.ipt.intechnology.co.uk'
 	localStorage["username"] = $("#username").val();
 	localStorage["password"] = $("#password").val();
 	localStorage["clicktodial"] = "true";

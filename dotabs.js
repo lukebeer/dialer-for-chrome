@@ -24,7 +24,7 @@ var oauth = ChromeExOAuth.initBackgroundPage({
 	'consumer_key' : 'anonymous',
 	'consumer_secret' : 'anonymous',
 	'scope' : 'http://www.google.com/m8/feeds/',
-	'app_name' : 'BroadSoft Xtended Dialer for Google Chrome'
+	'app_name' : 'InTechnology branded Broadsoft Xtended Dialer for Google Chrome'
 });
 
 oauth.authorize(function() {
@@ -226,7 +226,7 @@ document.querySelector('#holdbutton').addEventListener("click", function() {
 });
 
 function signout() {
-	localStorage["url"] = "";
+	//  localStorage["url"] = "";
 	localStorage["username"] = "";
 	localStorage["password"] = "";
 	localStorage["name"] = "";
@@ -239,7 +239,7 @@ function signout() {
 	localStorage["dnd"] = "";
 	localStorage["currentTab"] = "";
 	localStorage["connectionStatus"] = "signedOut";
-	$("#url").val("");
+	//  $("#url").val("");
 	$("#username").val("");
 	$("#password").val("");
 	$("#status").text("");

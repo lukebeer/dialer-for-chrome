@@ -20,7 +20,7 @@ XSIACTIONS.API = (function() {
 	var host = "";
 	var username = "";
 	var password = "";
-	var context = "/com.broadsoft.xsi-actions";
+	var context = "/xsi-actions";
 
 	var XML_HEADER = "<?xml version='1.0' encoding='UTF-8'?>";
 

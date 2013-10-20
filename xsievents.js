@@ -114,7 +114,7 @@ XSIEVENTS.API = (function() {
 
 	function heartbeat() {
 		if (isConnected()) {
-			var url = host + "/com.broadsoft.xsi-events/v2.0/channel/" + channelId + "/heartbeat";
+			var url = host + "/xsi-events/v2.0/channel/" + channelId + "/heartbeat";
 			send("PUT", url, null);
 			setTimeout(function() {
 				if (isConnected()) {
@@ -125,7 +125,7 @@ XSIEVENTS.API = (function() {
 	}
 
 	function removeChannel() {
-		var url = host + "/com.broadsoft.xsi-events/v2.0/channel/" + channelId;
+		var url = host + "/xsi-events/v2.0/channel/" + channelId;
 		send("DELETE", url, null);
 	}
 
@@ -176,7 +176,7 @@ XSIEVENTS.API = (function() {
 	}
 
 	function addEventSubscription(targetId, event) {
-		var url = host + "/com.broadsoft.xsi-events/v2.0/user/" + username;
+		var url = host + "/xsi-events/v2.0/user/" + username;
 		var data = XML_HEADER;
 		data = data + "<Subscription xmlns=\"http://schema.broadsoft.com/xsi\">";
 		data = data + "<subscriberId>" + username + "</subscriberId>";
@@ -192,7 +192,7 @@ XSIEVENTS.API = (function() {
 	}
 
 	function sendEventResponse(eventId) {
-		var url = host + "/com.broadsoft.xsi-events/v2.0/channel/eventresponse";
+		var url = host + "/xsi-events/v2.0/channel/eventresponse";
 		var data = XML_HEADER;
 		data = data + "<EventResponse xmlns=\"http://schema.broadsoft.com/xsi\">";
 		data = data + "<eventID>" + eventId + "</eventID>";
@@ -204,7 +204,7 @@ XSIEVENTS.API = (function() {
 	}
 
 	function getSubscription(subscriptionId) {
-		var url = host + "/com.broadsoft.xsi-events/v2.0/subscription/" + subscriptionId;
+		var url = host + "/xsi-events/v2.0/subscription/" + subscriptionId;
 		var response = send("GET", url, null);
 		return response;
 	}
