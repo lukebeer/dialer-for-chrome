@@ -63,7 +63,7 @@ XSIEVENTS.API = (function() {
 	function connect() {
 		var xhr = new XMLHttpRequest();
 		var index = 0;
-		var url = host + "/com.broadsoft.async/com.broadsoft.xsi-events/v2.0/channel";
+		var url = host + "/xsi-events/v2.0/channel";
 		xhr.open("POST", url, true);
 		xhr.onreadystatechange = function() {
 			var chunk = xhr.responseText.substring(index, xhr.responseText.length);
@@ -176,7 +176,7 @@ XSIEVENTS.API = (function() {
 	}
 
 	function addEventSubscription(targetId, event) {
-		var url = host + "/xsi-events/v2.0/user/" + username;
+		var url = host + "/com.broadsoft.async/xsi-events/v2.0/user/" + username;
 		var data = XML_HEADER;
 		data = data + "<Subscription xmlns=\"http://schema.broadsoft.com/xsi\">";
 		data = data + "<subscriberId>" + username + "</subscriberId>";
