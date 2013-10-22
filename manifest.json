@@ -1,6 +1,6 @@
 {
   "name" : "InTechnology Dialer for Google Chrome™",
- "version" : "0.2",
+ "version" : "0.3",
   "description" : "A Google Chrome™ extension that provides BroadWorks telephony integration.",
   "manifest_version": 2,
   "omnibox": { "keyword" : "-call" },
